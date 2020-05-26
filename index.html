@@ -7,14 +7,15 @@
     <link href="normailze.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-  <body>
+  <body class="body">
     <main>
       <h1>Formularz do wypełnienia</h1>
       <form method="POST" action="http://dev.cotenfrontend.pl/">
-        Dane kontaktowe
+       <legend class="title__form"> Dane kontaktowe</legend>
         <p>
           <label for="firstName">Imię:</label>
-          <input required
+          <input
+            required
             type="text"
             name="firstName"
             placeholder="Wpisz swoje imię"
@@ -23,25 +24,30 @@
         </p>
         <p>
           <label for="name">Imię:</label>
-          <input required
+          <input
+            required
             type="text"
             name="name"
             placeholder="name"
             id="name"
           />
-          <p>
-            <label for="riddle">riddle:</label>
-            <input required
-              type="text"
-              name="riddle"
-              placeholder="riddle"
-              id="riddle"
-            />
-          </p>
         </p>
+
+        <p>
+          <label for="riddle">riddle:</label>
+          <input
+            required
+            type="text"
+            name="riddle"
+            placeholder="riddle"
+            id="riddle"
+          />
+        </p>
+
         <p>
           <label for="lastName">Nazwisko:</label>
-          <input required
+          <input
+            required
             type="text"
             name="lastName"
             placeholder="Wpisz swoje nazwisko"
@@ -51,7 +57,7 @@
 
         <p>
           <label for="favouriteNumber">Ulubiona liczba:</label>
-          <input 
+          <input
             type="number"
             name="favouriteNumber"
             id="favouriteNumber"
@@ -89,50 +95,63 @@
           />
         </p>
 
-        <fieldset>
+        <fieldset class="ice__cream">
           <legend>Ulubione lody</legend>
           <p>
-            <label>Czekoladowe
-            <input name="iceCream" type="radio" value="choco" /></label>
+            <label
+              >Czekoladowe <input name="iceCream" type="radio" value="choco"
+            /></label>
           </p>
           <p>
-            <label >Wiśniowe
-            <input name="iceCream" type="radio" value="cherrie" /></label>
+            <label
+              >Wiśniowe <input name="iceCream" type="radio" value="cherrie"
+            /></label>
           </p>
           <p>
-            <label>Cytrynowe
-            <input name="iceCream" type="radio" value="lemon" /></label>
+            <label
+              >Cytrynowe <input name="iceCream" type="radio" value="lemon"
+            /></label>
           </p>
           <p>
-            <label >Smerfowe
-            <input name="iceCream" type="radio" value="smerf" /></label>
+            <label
+              >Smerfowe <input name="iceCream" type="radio" value="smerf"
+            /></label>
           </p>
         </fieldset>
 
-        <p><label for="range">Przesuń </label><input type="range" id="range" name="range" min=1 max="100" step="10" ></p>
+        <p>
+          <label for="range">Przesuń </label
+          ><input
+            type="range"
+            id="range"
+            name="range"
+            min="1"
+            max="100"
+            step="10"
+          />
+        </p>
 
+        <p>
+          <label name="band" for="band">Ulubiony zespół </label>
+          <select name="band" id="band">
+            <option value="1">Radiohead</option>
+            <option value="2">Smerfy</option>
+            <option value="3">Zespół Tureta</option>
+            <option value="4">Lorem</option>
+            <option value="5">Babcia</option>
+            <option value="6">Mama</option>
+          </select>
+        </p>
 
-<p><label name="band"  for="band">Ulubiony zespół </label>
-  <select name="band" id="band">
-<option value="1">Radiohead</option>
-<option value="2">Smerfy</option>
-<option value="3">Zespół Tureta</option>
-<option value="4">Lorem</option>
-<option value="5">Babcia</option>
-<option value="6">Mama</option>
-</select>
-</p>
+        <p>
+          <label for="acceptance">Akceptuje regulamin:</label>
+          <input required type="checkbox" id="acceptance" name="acceptance" />
+        </p>
 
-<p><label for="acceptance">Akceptuje regulamin:</label>
-  <input required type="checkbox" id="acceptance" name="acceptance"></p>
-
-
-<p><label for="agreement">Wyślij</label>
-<input type="submit" name="agreement" id="agreement"></p>
-
-
-
-        
+        <p>
+          <label for="agreement">Wyślij</label>
+          <input type="submit" name="agreement" id="agreement" />
+        </p>
       </form>
     </main>
   </body>
