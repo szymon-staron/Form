@@ -1,0 +1,26 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+main {
+  margin: 0 auto;
+}
+
+body{width: 400px;}
+
+h1{
+  text-align: center;
+}
+
+form {
+display: flex;
+flex-direction: column;
+ justify-content: center ;
+ text-align: center;
+}
